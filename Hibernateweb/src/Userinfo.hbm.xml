@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 29, 2019 4:51:31 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.hibernate.Userinfo" table="Userinfo">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="name" type="string" column="name" />
+        <property name="email" type="string" column="email" />
+        <property name="mobileno" type="long" column="mobileno" />
+        <property name="dob" type="date" column="dob" />
+    </class>
+</hibernate-mapping>
