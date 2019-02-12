@@ -22,7 +22,7 @@ public class view extends HttpServlet {
     }
    
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	//String name=request.getParameter("name");
+	
 		 PrintWriter pw=response.getWriter();
 		 response.setContentType("text/html");
 	
