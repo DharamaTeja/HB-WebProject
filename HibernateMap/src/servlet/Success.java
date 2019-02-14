@@ -50,6 +50,7 @@ public class Success extends HttpServlet {
 				pw.append("<td>"+ui.getMobileno()+"</td> </tr>");		
 			}
 			 pw.print("</table>");
+			 pw.print("<html><form action='Table' method='post'> <input type='submit'   name='action' value='ShowBankers' </html>");
 		}
 		
 		else if("ShowBankers".equals(action)) {
@@ -73,6 +74,7 @@ public class Success extends HttpServlet {
 		
 			}
 		pw.print("</table>");
+			 pw.print("<html><form action='Table' method='post'> <input type='submit'   name='action' value='ShowUsers' </html>");
 		}		
     	pw.println("<a href='index.jsp'>GoToMain</a>");
 	}
